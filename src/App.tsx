@@ -133,7 +133,7 @@ const About = (): JSX.Element => {
               Curriculum vitae
             </Typography>
             <Tooltip title="Download CV" placement="right">
-              <IconButton href={curriculumPdf} target="_blank">
+              <IconButton href={curriculumPdf} download>
                 <DownloadIcon />
               </IconButton>
             </Tooltip>
