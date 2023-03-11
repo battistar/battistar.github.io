@@ -1,12 +1,14 @@
-import { Avatar, Box, Container, IconButton, Paper, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Container, IconButton, Paper, Stack, Tooltip, Typography } from '@mui/material';
 import {
   LocationOn as LocationIcon,
   Phone as PhoneIcon,
   Mail as MailIcon,
   GitHub as GitHubIcon,
   LinkedIn as LinkedinIcon,
+  Download as DownloadIcon,
 } from '@mui/icons-material';
 import profileImg from 'assets/profile.jpeg';
+import curriculumPdf from 'assets/curriculum.pdf';
 
 const GIT_HUB_URL = 'https://github.com/battistar';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/samuele-battistella-ab15b3141';
@@ -15,7 +17,7 @@ const Head = (): JSX.Element => {
   return (
     <Container maxWidth="sm">
       <Box sx={{ mt: { xs: '91px', md: '116px' } }}>
-        <Paper sx={{ position: 'relative', borderRadius: 6, pt: { xs: '99px', md: '124px' }, pb: 2, px: 2 }}>
+        <Paper sx={{ position: 'relative', borderRadius: 6, pt: { xs: '99px', md: '124px' }, pb: 3, px: 3 }}>
           <Box
             sx={{
               position: 'absolute',
@@ -101,11 +103,51 @@ const Head = (): JSX.Element => {
   );
 };
 
+const About = (): JSX.Element => {
+  return (
+    <Container maxWidth="lg" sx={{ my: 3 }}>
+      <Paper sx={{ borderRadius: 6, p: 3 }}>
+        <Stack gap={2} sx={{ alignItems: 'center' }}>
+          <Typography variant="h5" component="div">
+            About me
+          </Typography>
+          <Typography variant="body1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim culpa error vero facilis rem fugiat
+            amet quod nobis expedita? Eligendi libero possimus quisquam, dolorum earum eum beatae in officiis.
+          </Typography>
+          <Typography variant="body1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut in qui optio rerum quas? Ex iste quis officia
+            mollitia dolores a, sint odio minus recusandae nostrum. Ipsa, enim corrupti. Eaque tempora debitis iure
+            eveniet harum laboriosam nostrum reprehenderit maxime modi odit! Alias quae deserunt laborum dolorem labore,
+            assumenda quia quo.
+          </Typography>
+          <Typography variant="body1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora cumque quis natus esse non velit adipisci
+            aliquam, rem ipsam corporis minima impedit perferendis dicta officiis nulla necessitatibus saepe et
+            suscipit?
+          </Typography>
+          <Stack direction="row" sx={{ alignItems: 'center' }}>
+            <Typography variant="body2" sx={{ mr: '4px' }}>
+              Curriculum vitae
+            </Typography>
+            <Tooltip title="Download CV" placement="right">
+              <IconButton href={curriculumPdf} target="_blank">
+                <DownloadIcon />
+              </IconButton>
+            </Tooltip>
+          </Stack>
+        </Stack>
+      </Paper>
+    </Container>
+  );
+};
+
 const App = (): JSX.Element => {
   return (
-    <div>
+    <>
       <Head />
-    </div>
+      <About />
+    </>
   );
 };
 
