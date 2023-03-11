@@ -7,6 +7,8 @@ import {
   LinkedIn as LinkedinIcon,
   Download as DownloadIcon,
 } from '@mui/icons-material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import profileImg from 'assets/profile.jpeg';
 import curriculumPdf from 'assets/curriculum.pdf';
 
@@ -142,12 +144,19 @@ const About = (): JSX.Element => {
   );
 };
 
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+
 const App = (): JSX.Element => {
   return (
-    <>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
       <Head />
       <About />
-    </>
+    </ThemeProvider>
   );
 };
 
