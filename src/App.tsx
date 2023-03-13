@@ -18,7 +18,7 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/samuele-battistella-ab15b3141'
 const Head = (): JSX.Element => {
   return (
     <Container maxWidth="sm">
-      <Box sx={{ mt: { xs: '91px', md: '116px' } }}>
+      <Box sx={{ mt: { xs: '91px', sm: '99px', md: '116px' } }}>
         <Paper sx={{ position: 'relative', borderRadius: 6, pt: { xs: '99px', md: '124px' }, pb: 3, px: 3 }}>
           <Box
             sx={{
@@ -107,7 +107,7 @@ const Head = (): JSX.Element => {
 
 const About = (): JSX.Element => {
   return (
-    <Container maxWidth="lg" sx={{ my: 3 }}>
+    <Container maxWidth="lg" sx={{ my: { xs: 2, sm: 3 } }}>
       <Paper sx={{ borderRadius: 6, p: 3 }}>
         <Stack gap={2} sx={{ alignItems: 'center' }}>
           <Typography variant="h5" component="div">
