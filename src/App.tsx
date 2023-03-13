@@ -1,4 +1,4 @@
-import { Avatar, Box, Container, IconButton, Paper, Stack, Tooltip, Typography } from '@mui/material';
+import { Avatar, Box, Container, IconButton, Paper, Stack, Typography } from '@mui/material';
 import {
   LocationOn as LocationIcon,
   Phone as PhoneIcon,
@@ -17,7 +17,7 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/samuele-battistella-ab15b3141'
 
 const Head = (): JSX.Element => {
   return (
-    <Container maxWidth="sm">
+    <Container component="section" maxWidth="sm">
       <Box sx={{ mt: { xs: '91px', sm: '99px', md: '116px' } }}>
         <Paper sx={{ position: 'relative', borderRadius: 6, pt: { xs: '99px', md: '124px' }, pb: 3, px: 3 }}>
           <Box
@@ -107,36 +107,51 @@ const Head = (): JSX.Element => {
 
 const About = (): JSX.Element => {
   return (
-    <Container maxWidth="lg" sx={{ my: { xs: 2, sm: 3 } }}>
+    <Container component="section" maxWidth="lg" sx={{ my: { xs: 2, sm: 3 } }}>
       <Paper sx={{ borderRadius: 6, p: 3 }}>
-        <Stack gap={2} sx={{ alignItems: 'center' }}>
-          <Typography variant="h5" component="div">
+        <Stack gap={2}>
+          <Typography variant="h5" textAlign="center">
             About me
           </Typography>
           <Typography variant="body1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim culpa error vero facilis rem fugiat
-            amet quod nobis expedita? Eligendi libero possimus quisquam, dolorum earum eum beatae in officiis.
+            Born in &apos;92, I fall in love with computer since childhood, when the first family&apos;s PC arrived at
+            home (if I remeber right, a machine with Pentium II and 32 MB of RAM, what a beast!). Whenever possible, I
+            watched my brother using it. Then, when he sometimes opened the PC case to do some hardware upgrade, I saw
+            all those integrated circuits and cables that can run programs and videogames: I absolutely had to figure
+            out how does it work!
           </Typography>
           <Typography variant="body1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut in qui optio rerum quas? Ex iste quis officia
-            mollitia dolores a, sint odio minus recusandae nostrum. Ipsa, enim corrupti. Eaque tempora debitis iure
-            eveniet harum laboriosam nostrum reprehenderit maxime modi odit! Alias quae deserunt laborum dolorem labore,
-            assumenda quia quo.
+            Time passed and another passion grew inside me: music. Band like Deep Purple and Iron Maiden hooked me. I
+            approached the study of bass guitar, I started playing in different bands and going to the first concerts,
+            until I was able to perform live!
           </Typography>
           <Typography variant="body1">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora cumque quis natus esse non velit adipisci
-            aliquam, rem ipsam corporis minima impedit perferendis dicta officiis nulla necessitatibus saepe et
-            suscipit?
+            Thanks those passions, I decided to start music computer science degree course, at the university of Milan.
+            Then I graduated in 2017.
           </Typography>
-          <Stack direction="row" sx={{ alignItems: 'center' }}>
-            <Typography variant="body2" sx={{ mr: '4px' }}>
-              Curriculum vitae
+          <Typography variant="body1">
+            Therefore my professional career began. I had the possibility to work with different tecnologies: I worked
+            as mobile app developer, first with Android then with iOS. I also worked as backend developer with Java, and
+            with Elixir a lot. I studied and I applied different architecture from &quot;LAMP like&quot; to
+            microservices, and the lesser known CQRS/ES.
+          </Typography>
+          <Typography variant="body1">
+            At the current days, do to my inclination on appreciate more &quot;multimedia&quot; projects, I&apos;m
+            focused on the frontend developing with Javascript, expecially with React framework. I&apos;ve chosen
+            Javascript because is one of the most popular programming languages and it&apos;s the foundation of a lot of
+            frameworks and tecnologies, from the frontend developing to the backend, fullstack and desktop: ReactJS,
+            NodeJS, ExpressJS, NextJS, Electron, etc.
+          </Typography>
+          <Typography variant="body1">
+            If you want to know me better, don&apos;t hesitate, you can contact me.
+          </Typography>
+          <Stack gap={1} sx={{ alignItems: 'center', mt: 3 }}>
+            <Typography variant="body2" textAlign="center">
+              Download my curriculum vitae
             </Typography>
-            <Tooltip title="Download CV" placement="right">
-              <IconButton href={curriculumPdf} download>
-                <DownloadIcon />
-              </IconButton>
-            </Tooltip>
+            <IconButton href={curriculumPdf} download>
+              <DownloadIcon />
+            </IconButton>
           </Stack>
         </Stack>
       </Paper>
@@ -154,8 +169,10 @@ const App = (): JSX.Element => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <Head />
-      <About />
+      <main>
+        <Head />
+        <About />
+      </main>
     </ThemeProvider>
   );
 };
