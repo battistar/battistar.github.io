@@ -10,7 +10,7 @@ import {
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import profileImg from 'assets/profile.jpeg';
-import curriculumPdf from 'assets/curriculum.pdf';
+import curriculumPdf from 'assets/cv_samuele_battistella_en.pdf';
 
 const GIT_HUB_URL = 'https://github.com/battistar';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/samuele-battistella-ab15b3141';
