@@ -114,33 +114,33 @@ const About = (): JSX.Element => {
             About me
           </Typography>
           <Typography variant="body1">
-            Born in &apos;92, I fall in love with computer since childhood, when the first family&apos;s PC arrived at
+            Born in &apos;92, I fall in love with computers since my childhood, when the first family&apos;s PC arrived
             home (if I remeber right, a machine with Pentium II and 32 MB of RAM, what a beast!). Whenever possible, I
-            watched my brother using it. Then, when he sometimes opened the PC case to do some hardware upgrade, I saw
-            all those integrated circuits and cables that can run programs and videogames: I absolutely had to figure
-            out how does it work!
+            watched my older brother using it. Sometimes he opened the PC case to do some hardware upgrade, when I saw
+            all those integrated circuits and cables that could run programs and videogames I absolutely had to figure
+            out how it worked!
           </Typography>
           <Typography variant="body1">
-            Time passed and another passion grew inside me: music. Band like Deep Purple and Iron Maiden hooked me. I
+            Time passed and another passion grew inside me: music. Bands like Deep Purple and Iron Maiden hooked me. I
             approached the study of bass guitar, I started playing in different bands and going to the first concerts,
-            until I was able to perform live!
+            until I was able to perform live myself!
           </Typography>
           <Typography variant="body1">
-            Thanks those passions, I decided to start music computer science degree course, at the university of Milan.
-            Then I graduated in 2017.
+            Guided by these two passions, I decided to start a music computer science degree course, at the university
+            of Milan. Then I graduated in 2017.
           </Typography>
           <Typography variant="body1">
-            Therefore my professional career began. I had the possibility to work with different tecnologies: I worked
-            as mobile app developer, first with Android then with iOS. I also worked as backend developer with Java, and
-            with Elixir a lot. I studied and I applied different architecture from &quot;LAMP like&quot; to
-            microservices, and the lesser known CQRS/ES.
+            Then my professional career began. I had the chance to work with different tecnologies: I worked as a mobile
+            app developer, first with Android then with iOS. I also worked as a backend developer with Java, and with
+            Elixir a lot. I studied and I applied different architectures from &quot;LAMP like&quot; to microservices,
+            and the lesser known CQRS/ES.
           </Typography>
           <Typography variant="body1">
-            At the current days, do to my inclination on appreciate more &quot;multimedia&quot; projects, I&apos;m
-            focused on the frontend developing with Javascript, expecially with React framework. I&apos;ve chosen
-            Javascript because is one of the most popular programming languages and it&apos;s the foundation of a lot of
-            frameworks and tecnologies, from the frontend developing to the backend, fullstack and desktop: ReactJS,
-            NodeJS, ExpressJS, NextJS, Electron, etc.
+            At present, due to my interest towards &quot;multimedia&quot; projects, I&apos;m more focused on the
+            frontend developing with Javascript, expecially with React framework. I&apos;ve chosen Javascript because it
+            is one of the most popular programming languages and it&apos;s the foundation of a lot of frameworks and
+            tecnologies, from the frontend developing to the backend, fullstack and desktop: ReactJS, NodeJS, ExpressJS,
+            NextJS, Electron, etc.
           </Typography>
           <Typography variant="body1">If you want to know me better, feel free to contact me!</Typography>
           <Stack gap={1} sx={{ alignItems: 'center', mt: 3 }}>
