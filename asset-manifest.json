@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.4d28a720.css",
-    "main.js": "./static/js/main.62b6c3c8.js",
+    "main.js": "./static/js/main.6615b05f.js",
+    "static/media/cv_samuele_battistella_en.pdf": "./static/media/cv_samuele_battistella_en.a3ecd97e0ec981c8595e.pdf",
     "static/media/profile.jpeg": "./static/media/profile.52392d25dd66410f6c76.jpeg",
     "static/media/roboto-all-500-normal.woff": "./static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "./static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
@@ -15,7 +16,6 @@
     "static/media/roboto-cyrillic-ext-300-normal.woff2": "./static/media/roboto-cyrillic-ext-300-normal.4777461b144e55145268.woff2",
     "static/media/roboto-cyrillic-ext-500-normal.woff2": "./static/media/roboto-cyrillic-ext-500-normal.62ced72e5832f02c2796.woff2",
     "static/media/roboto-cyrillic-ext-700-normal.woff2": "./static/media/roboto-cyrillic-ext-700-normal.be4d02458ce53887dc37.woff2",
-    "static/media/curriculum.pdf": "./static/media/curriculum.1a7212338381990a3767.pdf",
     "static/media/roboto-latin-ext-400-normal.woff2": "./static/media/roboto-latin-ext-400-normal.861b791f9de857a6e7bc.woff2",
     "static/media/roboto-latin-ext-700-normal.woff2": "./static/media/roboto-latin-ext-700-normal.ed67ad54b1a8f5d21150.woff2",
     "static/media/roboto-latin-ext-500-normal.woff2": "./static/media/roboto-latin-ext-500-normal.9165081d10e1ba601384.woff2",
@@ -38,10 +38,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "./static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "./index.html",
     "main.4d28a720.css.map": "./static/css/main.4d28a720.css.map",
-    "main.62b6c3c8.js.map": "./static/js/main.62b6c3c8.js.map"
+    "main.6615b05f.js.map": "./static/js/main.6615b05f.js.map"
   },
   "entrypoints": [
     "static/css/main.4d28a720.css",
-    "static/js/main.62b6c3c8.js"
+    "static/js/main.6615b05f.js"
   ]
 }
