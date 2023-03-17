@@ -25,10 +25,10 @@ jobs:
         run: npm ci
 
       - name: Prettier check
-        run: npx prettier --check "src/**/*/*.{ts,tsx}"
+        run: npx prettier --check "src/**/*.{ts,tsx}"
 
       - name: Linter check
-        run: npx eslint "src/**/*/*.{ts,tsx}"
+        run: npx eslint "src/**/*.{ts,tsx}"
 
       - name: Build
         run: npm run build
