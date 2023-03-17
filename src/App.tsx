@@ -142,9 +142,7 @@ const About = (): JSX.Element => {
             frameworks and tecnologies, from the frontend developing to the backend, fullstack and desktop: ReactJS,
             NodeJS, ExpressJS, NextJS, Electron, etc.
           </Typography>
-          <Typography variant="body1">
-            If you want to know me better, don&apos;t hesitate, you can contact me.
-          </Typography>
+          <Typography variant="body1">If you want to know me better, feel free to contact me!</Typography>
           <Stack gap={1} sx={{ alignItems: 'center', mt: 3 }}>
             <Typography variant="body2" textAlign="center">
               Download my curriculum vitae
