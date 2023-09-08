@@ -1,4 +1,17 @@
-import { Avatar, Box, Container, IconButton, Paper, Stack, Typography } from '@mui/material';
+import {
+  Avatar,
+  Box,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Container,
+  Grid,
+  IconButton,
+  Paper,
+  Stack,
+  Typography,
+} from '@mui/material';
 import {
   LocationOn as LocationIcon,
   Phone as PhoneIcon,
@@ -11,6 +24,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import profileImg from 'assets/profile.jpeg';
 import curriculumPdf from 'assets/cv_samuele_battistella_en.pdf';
+import projectList from 'assets/project.json';
 
 const GIT_HUB_URL = 'https://github.com/battistar';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/samuele-battistella-ab15b3141';
@@ -157,6 +171,43 @@ const About = (): JSX.Element => {
   );
 };
 
+const Projects = (): JSX.Element => {
+  const handleCardClick = (url: string) => () => {
+    window.open(url, '_blank');
+  };
+
+  return (
+    <Container component="section" maxWidth="lg" sx={{ my: { xs: 2, sm: 3 } }}>
+      <Stack gap={2}>
+        <Typography variant="h5" textAlign="center">
+          Projects
+        </Typography>
+        <Grid container rowSpacing={{ xs: 2, sm: 3 }} columnSpacing={{ xs: 2, sm: 3 }}>
+          {projectList.map((project) => {
+            return (
+              <Grid item key={project.title} xs={12} sm={6} md={4}>
+                <Card sx={{ borderRadius: 6 }} onClick={handleCardClick(project.url)}>
+                  <CardActionArea>
+                    <CardMedia component="img" height="200" image={project.imageSrc} alt={project.title} />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        {project.title}
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        {project.description}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Stack>
+    </Container>
+  );
+};
+
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
@@ -170,6 +221,7 @@ const App = (): JSX.Element => {
       <main>
         <Head />
         <About />
+        <Projects />
       </main>
     </ThemeProvider>
   );

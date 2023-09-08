@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Poison",
+    "description": "React web application for drink recipes. Powered by www.thecocktaildb.com APIs.",
+    "imageSrc": "./assets/images/poison.jpeg",
+    "url": "https://battistar.github.io/poison/"
+  },
+  {
+    "title": "Weather",
+    "description": "Simple weather forecast app built with NextJS and powered by WeatherAPI.com API's. ",
+    "imageSrc": "./assets/images/weather.jpeg",
+    "url": "https://weather-chi-puce.vercel.app/"
+  },
+  {
+    "title": "Fishing reel utils",
+    "description": "Utility to calculate line length or size of a fishing reel spool made with React. ",
+    "imageSrc": "./assets/images/fishing-reel-utils.jpeg",
+    "url": "https://battistar.github.io/fishing-reel-utils/"
+  }
+]
