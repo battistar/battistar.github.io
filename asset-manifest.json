@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.4d28a720.css",
-    "main.js": "./static/js/main.6130c12b.js",
-    "static/media/cv_samuele_battistella_en.pdf": "./static/media/cv_samuele_battistella_en.f928fe3ba25984140259.pdf",
+    "main.js": "./static/js/main.b28a2224.js",
+    "static/media/cv_samuele_battistella_en.pdf": "./static/media/cv_samuele_battistella_en.ed13a9a6067435337e1e.pdf",
     "static/media/profile.jpeg": "./static/media/profile.52392d25dd66410f6c76.jpeg",
     "static/media/roboto-all-500-normal.woff": "./static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "./static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
@@ -38,10 +38,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "./static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "./index.html",
     "main.4d28a720.css.map": "./static/css/main.4d28a720.css.map",
-    "main.6130c12b.js.map": "./static/js/main.6130c12b.js.map"
+    "main.b28a2224.js.map": "./static/js/main.b28a2224.js.map"
   },
   "entrypoints": [
     "static/css/main.4d28a720.css",
-    "static/js/main.6130c12b.js"
+    "static/js/main.b28a2224.js"
   ]
 }
