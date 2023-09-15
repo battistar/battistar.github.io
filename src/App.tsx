@@ -8,6 +8,7 @@ import {
   Container,
   Grid,
   IconButton,
+  Link,
   Paper,
   Stack,
   Typography,
@@ -203,6 +204,12 @@ const Projects = (): JSX.Element => {
             );
           })}
         </Grid>
+        <Typography variant="body1" textAlign="center">
+          Watch also my challenges on{' '}
+          <Link href="https://www.frontendmentor.io/profile/battistar" target="_blank">
+            Frontend Mentor
+          </Link>
+        </Typography>
       </Stack>
     </Container>
   );
