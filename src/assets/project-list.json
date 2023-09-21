@@ -7,14 +7,20 @@
   },
   {
     "title": "Weather",
-    "description": "Simple weather forecast app built with NextJS and powered by WeatherAPI.com API's. ",
+    "description": "Simple weather forecast app built with NextJS and powered by WeatherAPI.com API's.",
     "imageSrc": "./assets/images/weather.jpeg",
     "url": "https://weather-chi-puce.vercel.app/"
   },
   {
     "title": "Fishing reel utils",
-    "description": "Utility to calculate line length or size of a fishing reel spool made with React. ",
+    "description": "Utility to calculate line length or size of a fishing reel spool made with React.",
     "imageSrc": "./assets/images/fishing-reel-utils.jpeg",
     "url": "https://battistar.github.io/fishing-reel-utils/"
+  },
+  {
+    "title": "Audio Shifter",
+    "description": "Realtime audio speed changer and pitch shifter web app made with React and powered by wavesurfer.js and Tone.js.",
+    "imageSrc": "./assets/images/audio-shifter.jpeg",
+    "url": "https://battistar.github.io/audio-shifter/"
   }
 ]

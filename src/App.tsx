@@ -25,7 +25,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import profileImg from 'assets/profile.jpeg';
 import curriculumPdf from 'assets/cv_samuele_battistella_en.pdf';
-import projectList from 'assets/project.json';
+import projectList from 'assets/project-list.json';
 
 const GIT_HUB_URL = 'https://github.com/battistar';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/samuele-battistella-ab15b3141';
