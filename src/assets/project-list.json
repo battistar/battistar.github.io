@@ -1,5 +1,11 @@
 [
   {
+    "title": "Gornate Olona kindergarten's website",
+    "description": "Website for the Gornate Olona childhood school built with React.",
+    "imageSrc": "./assets/images/kindergarten.jpeg",
+    "url": "https://www.scuolagrigioni.it/"
+  },
+  {
     "title": "Poison",
     "description": "React web application for drink recipes. Powered by www.thecocktaildb.com APIs.",
     "imageSrc": "./assets/images/poison.jpeg",
